@@ -1,89 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio & Blog</title>
-    <!-- Beautiful Font and Icons -->
-    <link href="https://googleapis.com" rel="stylesheet">
-    <style>
-        :root { --bg: #f8fafc; --card: #ffffff; --text: #0f172a; --muted: #64748b; --primary: #6366f1; --border: #e2e8f0; }
-        * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Plus Jakarta Sans', sans-serif; }
-        body { background-color: var(--bg); color: var(--text); line-height: 1.6; padding: 40px 20px; }
-        .container { max-width: 700px; margin: 0 auto; }
-        
-        /* Profile Header */
-        header { text-align: center; margin-bottom: 48px; padding-top: 20px; }
-        .avatar { width: 90px; height: 90px; border-radius: 50%; background: linear-gradient(135deg, #6366f1, #a855f7); margin: 0 auto 16px; display: flex; align-items: center; justify-content: center; color: white; font-size: 32px; font-weight: bold; box-shadow: 0 10px 15px -3px rgba(99, 102, 241, 0.2); }
-        h1 { font-size: 2.2rem; font-weight: 700; letter-spacing: -0.02em; margin-bottom: 8px; }
-        .bio { color: var(--muted); font-size: 1.1rem; max-width: 500px; margin: 0 auto; }
-
-        /* Sections */
-        .section { margin-bottom: 40px; }
-        .section-title { font-size: 1.2rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; color: var(--muted); margin-bottom: 16px; border-bottom: 2px solid var(--border); padding-bottom: 6px; }
-        
-        /* Grid Layout for Links / Portfolio */
-        .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
-        @media (max-width: 550px) { .grid { grid-template-columns: 1fr; } }
-        
-        /* Premium Cards */
-        .card { background: var(--card); border: 1px solid var(--border); padding: 20px; border-radius: 12px; text-decoration: none; color: inherit; transition: all 0.2s ease; display: block; box-shadow: 0 1px 3px rgba(0,0,0,0.02); }
-        .card:hover { transform: translateY(-3px); border-color: var(--primary); box-shadow: 0 12px 20px -8px rgba(99, 102, 241, 0.15); }
-        .card h4 { font-size: 1.05rem; color: var(--text); margin-bottom: 6px; font-weight: 600; display: flex; align-items: center; gap: 6px; }
-        .card p { color: var(--muted); font-size: 0.9rem; }
-
-        /* Blog Item Layout */
-        .blog-item { background: var(--card); border: 1px solid var(--border); padding: 20px; border-radius: 12px; margin-bottom: 14px; cursor: pointer; transition: all 0.2s ease; }
-        .blog-item:hover { border-color: var(--primary); }
-        .blog-meta { font-size: 0.8rem; color: var(--primary); font-weight: 600; margin-bottom: 4px; text-transform: uppercase; }
-        .blog-item h4 { font-size: 1.1rem; margin-bottom: 6px; }
-        .blog-item p { color: var(--muted); font-size: 0.95rem; }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mohita — AI, Ideas & Building</title>
+<meta name="description" content="Mohita's personal corner of the internet — AI, technology, ideas, projects, writing and interesting things.">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-    <div class="container">
-        <!-- Header Section -->
-        <header>
-            <div class="avatar">ME</div>
-            <h1>Your Name</h1>
-            <p class="bio">Welcome to my space. I share my portfolio, write down ongoing thoughts, and collect interesting links here.</p>
-        </header>
-
-        <!-- About Me Section -->
-        <div class="section">
-            <h3 class="section-title">🙋‍♂️ About Me</h3>
-            <p style="color: #334155; font-size: 1.05rem;">
-                Tell the world who you are. This template is lightweight, completely responsive, and styled to showcase your core profile details cleanly. Change this block to highlight your current mission or background.
-            </p>
-        </div>
-
-        <!-- Portfolio & Navigation Links Grid -->
-        <div class="section">
-            <h3 class="section-title">📌 Featured Links & Work</h3>
-            <div class="grid">
-                <a href="https://github.com" target="_blank" class="card">
-                    <h4>🐙 GitHub Code</h4>
-                    <p>Explore my repositories, open-source work, and code snippets.</p>
-                </a>
-                <a href="https://linkedin.com" target="_blank" class="card">
-                    <h4>💼 LinkedIn</h4>
-                    <p>Connect with me professionally and view my formal career path.</p>
-                </a>
-            </div>
-        </div>
-
-        <!-- Thoughts & Blog Section -->
-        <div class="section">
-            <h3 class="section-title">📝 Thoughts & Blogs</h3>
-            
-            <div class="blog-item">
-                <div class="blog-meta">September 21, 2026</div>
-                <h4>My First Blog Post Title</h4>
-                <p>This is where a short preview of your thoughts can live. The clean typography makes it crisp and incredibly easy to scroll through on mobile screens.</p>
-            </div>
-        </div>
+<div class="container">
+  <nav class="site-nav">
+    <a class="logo" href="index.html">Mohita.</a>
+    <div class="nav-links">
+      <a href="thoughts.html">Thoughts</a>
+      <a href="videos.html">Videos</a>
+      <a href="projects.html">Projects</a>
+      <a href="links.html">Links</a>
     </div>
+  </nav>
 
+  <header class="hero">
+    <img src="assets/mohita.png" alt="Mohita" class="profile-photo">
+    <div class="eyebrow">ML Scientist · Builder · Curious Human</div>
+    <h1>I like building things<br>and <span>figuring things out.</span></h1>
+    <p class="hero-bio">
+      I'm Mohita — an ML scientist exploring AI, technology and real-world problems.
+      I write about what I'm learning, build things that interest me, and collect
+      ideas worth sharing.
+    </p>
+    <div class="socials">
+      <a href="https://www.linkedin.com/" target="_blank" rel="noopener">LinkedIn ↗</a>
+      <a href="https://github.com/" target="_blank" rel="noopener">GitHub ↗</a>
+      <a href="mailto:your@email.com">Email ↗</a>
+    </div>
+  </header>
+
+  <section class="section">
+    <div class="section-title">About me</div>
+    <div class="about-text">
+      <p>I spend my days thinking about machine learning, AI systems, and how increasingly powerful technology can become genuinely useful.</p>
+      <p>Outside work, my interests are much wider — careers, money, businesses, parenting, creativity, books, relationships and the general question of how to build a life that feels like your own.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-title">Explore</div>
+    <div class="grid">
+      <a class="card" href="thoughts.html"><h3><span class="icon">✦</span> Thoughts & Blogs</h3><p>Essays, notes and things I'm trying to understand.</p></a>
+      <a class="card" href="videos.html"><h3><span class="icon">▶</span> Videos</h3><p>Ideas, explainers and conversations in video form.</p></a>
+      <a class="card" href="projects.html"><h3><span class="icon">⌘</span> Projects</h3><p>Experiments, products and things I've built.</p></a>
+      <a class="card" href="links.html"><h3><span class="icon">↗</span> Interesting Links</h3><p>Books, tools, people and rabbit holes worth exploring.</p></a>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-title">Latest writing</div>
+    <a class="blog-item" href="thoughts.html#ai-solved">
+      <div class="blog-meta">AI · September 2026</div>
+      <h3>What AI has actually solved — and what it hasn't</h3>
+      <p>The impressive progress of AI is real. So are the problems that remain stubbornly unsolved.</p>
+    </a>
+    <a class="blog-item" href="thoughts.html#llms">
+      <div class="blog-meta">AI · Technology · September 2026</div>
+      <h3>How are different LLMs actually different?</h3>
+      <p>GPT, Claude, Gemini and open models are not simply different versions of the same thing.</p>
+    </a>
+    <a class="blog-item" href="thoughts.html#building">
+      <div class="blog-meta">Building · Coming soon</div>
+      <h3>Building a small business on the internet</h3>
+      <p>Notes from exploring products, ideas and the strange economics of one-person businesses.</p>
+    </a>
+    <a class="see-all" href="thoughts.html">See all writing →</a>
+  </section>
+
+  <footer class="footer">
+    <div>© 2026 Mohita Ajmera</div>
+    <div class="footer-links">
+      <a href="https://github.com/" target="_blank" rel="noopener">GitHub</a>
+      <a href="https://www.linkedin.com/" target="_blank" rel="noopener">LinkedIn</a>
+    </div>
+  </footer>
+</div>
 </body>
 </html>
