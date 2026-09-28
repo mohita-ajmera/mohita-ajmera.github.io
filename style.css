@@ -113,3 +113,70 @@ h1 {
   .grid { grid-template-columns: 1fr; }
   .footer { flex-direction: column; }
 }
+
+/* ================================
+   THOUGHTS & BLOGS PAGE
+   ================================ */
+
+.thoughts-group {
+  margin-bottom: 65px;
+}
+
+.thoughts-group-header {
+  margin-bottom: 16px;
+}
+
+.thoughts-group-header h2 {
+  font-family: "Playfair Display", serif;
+  font-size: 2rem;
+  font-weight: 500;
+  letter-spacing: -0.03em;
+  margin-bottom: 3px;
+}
+
+.thoughts-group-header p {
+  color: var(--muted);
+  font-size: 0.88rem;
+}
+
+
+/* Category pills */
+
+.category-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+  margin-bottom: 20px;
+}
+
+.category-tags span {
+  background: var(--primary-soft);
+  color: var(--primary);
+  border-radius: 100px;
+  padding: 5px 11px;
+  font-size: 0.72rem;
+  font-weight: 600;
+}
+
+
+/* Posts */
+
+.posts {
+  border-top: 1px solid var(--border);
+}
+
+.posts .blog-item {
+  border-left: 0;
+  border-right: 0;
+  border-top: 0;
+  border-radius: 0;
+  box-shadow: none;
+  margin-bottom: 0;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.posts .blog-item:hover {
+  transform: none;
+  padding-left: 7px;
+}
